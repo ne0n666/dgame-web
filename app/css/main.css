@@ -1,0 +1,45 @@
+body{
+	background: #56af34;
+}
+.headdiv{
+	margin: auto;
+	text-align: center;
+	color: #454545;
+	font-size: 20px;
+}
+
+.carddiv,
+.footdiv{
+	background-image: url('/img/80pixb.png');
+	border-radius: 10px;
+	text-align: center;
+	position: relative;
+	margin: auto;
+}
+.carddiv{
+	margin: 200px auto auto auto;
+	padding: 30px 10px 20px 10px;
+	width: 500px;
+}
+
+.cardtitle{
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+	margin: 0 0 0 0;
+}
+
+.carddesc{
+	color: #959595;
+}
+.footdiv{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.foottext{
+	color: #959595;
+	font-size: 20px;
+	margin: 10px 20px 10px 20px;
+}
