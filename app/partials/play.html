@@ -1,0 +1,27 @@
+<div ng-hide="hidehelp" helpDirective></div>
+<div ng-click="draw()" class="card-container">
+	<p class="cardtitle">{{cardtitle}}</p>
+	<p class="carddesc">{{carddesc}}</p>
+</div>
+
+<div class="footdiv">
+	<div class="foot-left" ng-click="gethelp()">
+		<span class="fa-stack-2x fa-lg">
+			<div class="icon">
+				<i class="fa fa-question fa-stack fa-inverse"></i>
+			</div>
+		</span>
+	</div>
+	<div class="foot-mid">
+		<div class="count-outer">
+		<div class="count-container">
+			<p class="foottext">- {{cardcount}} -</p>
+		</div>
+		</div>
+	</div>
+	<div class="foot-right">
+		<div class="icon">
+			<i class="fa fa-cogs fa-stack fa-2x fa-inverse"></i>
+		</div>
+	</div>
+</div>

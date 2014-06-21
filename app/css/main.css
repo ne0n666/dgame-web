@@ -1,45 +1,118 @@
 body{
 	background: #56af34;
+	height: 100%;
 }
 .headdiv{
 	margin: auto;
 	text-align: center;
 	color: #454545;
-	font-size: 20px;
+	font-size: 1em;
 }
 
-.carddiv,
-.footdiv{
-	background-image: url('/img/80pixb.png');
-	border-radius: 10px;
-	text-align: center;
-	position: relative;
-	margin: auto;
+.black-trans{
+	opacity: 0.7;
+	color: black;
 }
-.carddiv{
-	margin: 200px auto auto auto;
-	padding: 30px 10px 20px 10px;
-	width: 500px;
+
+.card-container,
+.count-container{
+	background-image: url('/img/b70pix.png');
+	border-radius: 1em;
+	text-align: center;
+	margin: auto;
+	position: relative;
+}
+.card-container{
+	cursor: pointer;
+	word-wrap: break-word;
+	padding: 5em 2em 5em 2em;
+	top: 15em;
+	width: 75%;
+	max-width: 40em;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
 }
 
 .cardtitle{
 	color: white;
 	font-weight: bold;
-	font-size: 30px;
-	margin: 0 0 0 0;
+	font-size: 4em;
+	line-height: 100%;
+	margin: 0;
 }
 
 .carddesc{
+	margin-top: 2em;
 	color: #959595;
+	font-size: 1em;
 }
 .footdiv{
 	position: absolute;
-	bottom: 0;
+	bottom: 1em;
+	left: 2.5%;
+	width: 95%;
+	height: 5em;
+	margin: 0;
+	padding: 0;
+}
+.foot-left,
+.foot-mid,
+.foot-right{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	vertical-align: middle;
+	height: 4em;
+}
+.foot-left{
+	text-align: left;
+	width: 33%;
+	min-width: 4em;
+}
+.foot-mid{
+	text-align: center;
+	width: 33%;
+	min-width: 4em;
+}
+.foot-right{
+	text-align: right;
+	width: 31%;
+	min-width: 4em;
+}
+.count-outer{
+	text-align: center;
 	width: 100%;
 }
-
+.count-container{
+	display: inline-block;
+}
 .foottext{
-	color: #959595;
-	font-size: 20px;
-	margin: 10px 20px 10px 20px;
+	color: white;
+	font-size: 1.5em;
+	margin: 0.3em 0.7em 0.2em 0.7em;
+}
+.icon{
+	cursor: pointer;
+	margin:auto;
+	padding: 0;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	text-align: center;
+	background-image: url('/img/b70pix.png'); 
+}
+.icon:hover{
+	background: black;
+	-webkit-transform: scale(1.2,1.2);
+	-moz-transform: scale(1.2,1.2);
+	transform: scale(1.2,1.2);
+}
+
+.card-container:hover{
+	background: black;
+	-webkit-transform: scale(1.1,1.1);
+	-moz-transform: scale(1.1,1.1);
+	transform: scale(1.1,1.1);
 }
