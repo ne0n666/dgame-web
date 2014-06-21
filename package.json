@@ -43,7 +43,8 @@
     "karma": "~0.12.16",
     "shelljs": "~0.2.6",
     "http-server": "~0.6.1",
-    "bower": "~1.3.5"
+    "bower": "~1.3.5",
+    "express": "^4.0.0"
   },
   "author": "Ne0n"
 }
