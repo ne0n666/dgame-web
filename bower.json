@@ -1,0 +1,29 @@
+{
+  "name": "dgame-web",
+  "description": "Web based drinking game",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ne0n666/dgame-web",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.2.x",
+    "angular-route": "1.2.x",
+    "angular-loader": "1.2.x",
+    "angular-mocks": "~1.2.x",
+    "html5-boilerplate": "~4.3.0"
+  },
+  "authors": [
+    "ne0n666 <darthnordon@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}
