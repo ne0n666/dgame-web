@@ -2,6 +2,11 @@ body{
 	background: #56af34;
 	height: 100%;
 }
+ol,
+ul{
+	color: #959595;
+	text-align: justify;
+}
 .headdiv{
 	margin: auto;
 	text-align: center;
@@ -15,12 +20,33 @@ body{
 }
 
 .card-container,
-.count-container{
+.count-container,
+.help-container,
+.settings-container{
 	background-image: url('/img/b70pix.png');
 	border-radius: 1em;
 	text-align: center;
 	margin: auto;
 	position: relative;
+}
+.help-container,
+.settings-container{
+	z-index: 2;
+	width: 80%;
+	background-image: url('/img/b90pix.png');
+	position: absolute;
+	left:0;
+	right:0;
+	display: block;
+	margin: auto;
+	top: 3em;
+	color: white;
+	padding: 1em;
+	max-width: 50em;
+	cursor: pointer;
+}
+.help-container p{
+	color: #959595;
 }
 .card-container{
 	cursor: pointer;
@@ -110,7 +136,8 @@ body{
 	transform: scale(1.2,1.2);
 }
 
-.card-container:hover{
+.card-container:hover,
+.help-container:hover{
 	background: black;
 	-webkit-transform: scale(1.1,1.1);
 	-moz-transform: scale(1.1,1.1);

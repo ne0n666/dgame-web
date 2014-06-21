@@ -1,15 +1,18 @@
 'use strict';
 
-angular.module('myApp.directives', []).
+angular.module('myApp.directives', [])
 
-  directive('appVersion', ['version', function(version) {
-    return function(scope, elm, attrs) {
-      elm.text(version);
-    };
-  }]);
-	directive('helpDirective', function() {
+	.directive('helpDirective', function() {
 		return {
 			restrict: 'A',
-			templateUrl:'/views/help.html'
+			templateUrl:'/partials/help.html'
 		};
 	})
+	.directive('settDirective', function() {
+		return {
+			restrict: 'A',
+			templateUrl:'/partials/settings.html'
+		};
+	});
+
+

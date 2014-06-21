@@ -1,16 +1,16 @@
-<div ng-hide="hidehelp" helpDirective></div>
 <div ng-click="draw()" class="card-container">
 	<p class="cardtitle">{{cardtitle}}</p>
 	<p class="carddesc">{{carddesc}}</p>
 </div>
 
+<div ng-hide="hidehelp" help-directive></div>
+<div ng-hide="hidesetts" sett-directive></div>
+
 <div class="footdiv">
-	<div class="foot-left" ng-click="gethelp()">
-		<span class="fa-stack-2x fa-lg">
-			<div class="icon">
-				<i class="fa fa-question fa-stack fa-inverse"></i>
+	<div class="foot-left">
+			<div class="icon" ng-click="switchhelp()">
+				<i class="fa fa-question fa-stack fa-2x fa-inverse"></i>
 			</div>
-		</span>
 	</div>
 	<div class="foot-mid">
 		<div class="count-outer">
@@ -20,7 +20,7 @@
 		</div>
 	</div>
 	<div class="foot-right">
-		<div class="icon">
+		<div class="icon" ng-click="switchsetts()">
 			<i class="fa fa-cogs fa-stack fa-2x fa-inverse"></i>
 		</div>
 	</div>
