@@ -33,7 +33,7 @@
     "url": "https://github.com/ne0n666/dgame-web/issues"
   },
   "homepage": "https://github.com/ne0n666/dgame-web",
-  "main": "js/app.js",
+  "main": "main.js",
   "directories": {
     "test": "test"
   },
