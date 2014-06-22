@@ -1,11 +1,13 @@
 <div class="maindiv">
-	<div ng-click="draw()" class="card-container">
-		<h4 class="cardtitle">{{cardtitle}}</h4>
-		<p class="carddesc">{{carddesc}}</p>
+	<div ng-click="draw()" ng-show="hidehelp && hidesetts" class="card-container">
+		<div class="scroll-container">
+			<h4 class="cardtitle">{{cardtitle}}</h4>
+			<p class="carddesc">{{carddesc}}</p>
+		</div>
 	</div>
-</div>
 <div ng-hide="hidehelp" help-directive></div>
 <div ng-hide="hidesetts" sett-directive></div>
+</div>
 
 <div class="footdiv">
 	<div class="foot-left">
