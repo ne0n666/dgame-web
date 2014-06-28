@@ -5,26 +5,54 @@
 			<p class="carddesc">{{carddesc}}</p>
 		</div>
 	</div>
-<div ng-hide="hidehelp" help-directive></div>
-<div ng-hide="hidesetts" sett-directive></div>
-</div>
-
-<div class="footdiv">
-	<div class="foot-left">
-			<div class="icon" ng-click="switchhelp()">
-				<i class="fa fa-question fa-stack fa-2x fa-inverse"></i>
+	<div class="middiv">
+		<div ng-hide="hidehelp" help-directive class="helpNsetts"></div>
+		<div ng-hide="hidesetts" sett-directive class="helpNsetts"></div>
+	</div>
+	<div class="footdiv">
+		<div class="foot-left">
+				<div class="icon" ng-click="switchhelp()">
+					<i class="fa fa-question fa-stack fa-2x fa-inverse"></i>
+				</div>
+		</div>
+		<div class="foot-mid">
+			<div class="count-outer" ng-show="hidehelp && hidesetts">
+			<div class="footmid-container count-container">
+				<p class="foottext">- {{cardcount}} -</p>
 			</div>
-	</div>
-	<div class="foot-mid">
-		<div class="count-outer">
-		<div class="count-container">
-			<p class="foottext">- {{cardcount}} -</p>
+			</div>
+			<div class="count-outer" ng-hide="hidehelp && hidesetts" >
+				<a href="http://www.google.com/moderator/#15/e=2196cf&t=2196cf.43" class="footmid-container hover-animate">
+					<h4 id="suggestion-txt">Leave feedback!</h4>
+				</a>
 		</div>
 		</div>
-	</div>
-	<div class="foot-right">
-		<div class="icon" ng-click="switchsetts()">
-			<i class="fa fa-cogs fa-stack fa-2x fa-inverse"></i>
+		<div class="foot-right">
+			<div class="icon" ng-click="switchsetts()">
+				<i class="fa fa-cogs fa-stack fa-2x fa-inverse"></i>
+			</div>
 		</div>
 	</div>
+</div>
+<div class="ads-side-l" ng-show="hidehelp && hidesetts">
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- dGame sides -->
+	<ins class="adsbygoogle"
+	     style="display:inline-block;width:160px;height:600px"
+	     data-ad-client="ca-pub-2515264107962988"
+	     data-ad-slot="2284849860"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+<div class="ads-side-r" ng-show="hidehelp && hidesetts">
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- dGame-side-r -->
+	<ins class="adsbygoogle"
+	     style="display:inline-block;width:160px;height:600px"
+	     data-ad-client="ca-pub-2515264107962988"
+	     data-ad-slot="7912581063"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
 </div>

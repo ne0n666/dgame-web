@@ -22,13 +22,16 @@ h5{
 	bottom: 1em;
 	line-height: 100%;
 }
+#suggestion-txt{
+	margin: 0;
+	padding: 1em 0em 1em 0em;
+}
 .headdiv{
 	margin: auto;
 	text-align: center;
 	color: #454545;
 	font-size: 1em;
 }
-
 .black-trans{
 	opacity: 0.7;
 	color: black;
@@ -40,10 +43,19 @@ h5{
 	top: 10%;
 	height: 80%;
 }
+.middiv{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
 .card-container,
 .count-container,
 .help-container,
-.settings-container{
+.settings-container,
+.footmid-container{
+	position: absolute;
+	left: 0;
+	right: 0;
 	background-image: url('/img/b70pix.png');
 	border-radius: 1em;
 	width: 70%;
@@ -52,18 +64,20 @@ h5{
 	position: relative;
 }
 .card-container{
+	position: absolute;
 	cursor: pointer;
 	word-wrap: break-word;
 	padding: 4em 2em 3em 2em;
 	height: 13em;
 	max-width: 40em;
 	max-height: 60%;
+	z-index: 1;
 }
 .help-container,
 .settings-container{
 	z-index: 2;
 	background: black;
-	position: absolute;
+	position: relative;
 	left:0;
 	right:0;
 	width: 82%;
@@ -86,7 +100,18 @@ h5{
 .scroll-container::-webkit-scrollbar{
 	display: none;
 }
-
+.footmid-container{
+	display: block;
+	margin-top: 0.5em;
+	width: 10em;
+}
+.helpNsetts{
+	height: 50em;
+	max-height: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
 .cardtitle{
 	font-weight: bold;
 	font-size: 4em;
@@ -98,6 +123,7 @@ h5{
 }
 .footdiv{
 	position: fixed;
+	z-index: 4;
 	bottom: 1em;
 	width: 100%;
 	height: 4em;
@@ -133,7 +159,7 @@ h5{
 .foottext{
 	color: white;
 	font-size: 1.5em;
-	margin: 0.3em 0.7em 0.2em 0.7em;
+	margin: 0.3em 0.7em 0.3em 0.7em;
 }
 .icon{
 	cursor: pointer;
@@ -147,10 +173,12 @@ h5{
 }
 .icon:hover,
 .card-container:hover,
-.help-container:hover{
+.help-container:hover,
+.hover-animate:hover{
 	background: black;
 }
-.icon:hover{
+.icon:hover,
+.hover-animate:hover{
 	-webkit-transform: scale(1.2,1.2);
 	-moz-transform: scale(1.2,1.2);
 	transform: scale(1.2,1.2);
@@ -161,34 +189,72 @@ h5{
 	-moz-transform: scale(1.1,1.1);
 	transform: scale(1.1,1.1);
 }
-@media screen and (max-width: 480px) and (orientation: portrait){
-
-	.cardtitle{
-		font-size: 3.5em;
-	}
-	.card-container{
-		padding: 1em;
-		width: 80%;
-		height: 70%;
-		max-height: 80%;
-	}
+a:visited,
+a:link,
+a:active{
+	text-decoration: none;
+	color: white;
 }
-@media screen and (max-width: 480px) and (orientation: landscape){
+.ads-side-l,
+.ads-side-r{
+	position: fixed;
+	left: 2%;
+	top: 8%;
+	width: 160px;
+	height: 600px;
+	background: white;
+}
+.ads-side-r{
+	left: auto;
+	right: 2%;
+}
 
+@media screen and (max-width: 480px){
 	.cardtitle{
 		font-size: 3.5em;
+	}
+	.maindiv{
+		top: 5%;
+	}
+	.carddesc{
+		margin-top: 1em;
 	}
 	.help-container,
-	.settings-container,
-	.card-container{
+	.settings-container{
+		position: relative;
 		padding: 1em;
 		width: 80%;
-		height: 50%;
-		max-height: 80%;
+		height: 80%;
+		min-height: 15em;
+		margin-top: 0em;
+	}
+	.card-container{
+		height: 70%;
+		max-height: 13em;
+		min-height: 4em;
+		padding: 1em;
+		width: 80%;
+		margin-top: 0em;
 	}
 	h5{
 		font-size: 0.6em;
 		bottom: 1.5em;
 	}
+	a.footmid-container{
+		width: 9em;
+	}
 }
-
+@media screen and (max-height: 445px){
+	.footdiv{
+		display: none;
+	}
+	.maindiv{
+		top: 10%;
+	}
+}
+@media screen and (max-width: 1070px), screen and (max-height: 740px){
+	.ads-side-l,
+	.ads-side-r{
+		display:none;
+	}
+}

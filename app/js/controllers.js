@@ -9,7 +9,7 @@ angular.module('myApp.controllers', [])
     $scope.hidesetts=true;
     $scope.cardcount=0;
     $scope.cardtitle = "First taste!";
-    $scope.carddesc = "Everyone takes a sip to get ready for THE GAME!";
+    $scope.carddesc = "Everyone takes a sip to get ready for THE GAME! Click this box to continue...";
   	var random;
     console.log(titles.length);
   	$scope.draw = function(){
