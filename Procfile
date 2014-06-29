@@ -1,1 +1,1 @@
-web: node app.js
+web: node http-with-gzip.js
