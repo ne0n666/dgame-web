@@ -213,7 +213,19 @@ a:active{
 	left: auto;
 	right: 2%;
 }
-
+.image{
+	margin-top: 0.8em;
+	margin-bottom: -0.8em;
+}
+.top-offset{
+	margin-top: -6em;
+	position: absolute;
+}
+.cover{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
 @media screen and (max-width: 480px){
 	.cardtitle{
 		font-size: 3.5em;
@@ -255,6 +267,19 @@ a:active{
 	}
 	.maindiv{
 		top: 10%;
+	}
+}
+@media screen and (max-height: 570px){
+	.image{
+		display: none;
+	}
+	.top-offset{
+		margin-top: auto;
+	}
+}
+@media screen and (max-width: 300px){
+	.foot-mid{
+		display: none;
 	}
 }
 @media screen and (max-width: 1070px), screen and (max-height: 740px){
