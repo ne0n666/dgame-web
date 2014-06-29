@@ -261,7 +261,15 @@ a:active{
 		width: 9em;
 	}
 }
-@media screen and (max-height: 445px){
+@media screen and (max-height: 360px){
+	.footdiv{
+		display: none;
+	}
+	.maindiv{
+		top: 10%;
+	}
+}
+@media screen and (max-height: 445px) and (min-width: 480px){
 	.footdiv{
 		display: none;
 	}
