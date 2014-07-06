@@ -1,5 +1,10 @@
+
+<div class="cover clickcover" ng-hide="hidehelp" ng-click="switchhelp()"></div>
+<div class="cover clickcover" ng-hide="hidesetts" ng-click="switchsetts()"></div>
+<div class="cover"></div>
 <div class="maindiv">
 	<div ng-click="draw()" ng-show="hidehelp && hidesetts" class="card-container">
+		<div class="cover"></div>
 		<div class="scroll-container">
 			<h4 class="cardtitle">{{cardtitle}}</h4>
 			<p class="carddesc">{{carddesc}}</p>
@@ -18,6 +23,7 @@
 		<div class="foot-mid">
 			<div class="count-outer" ng-show="hidehelp && hidesetts">
 			<div class="footmid-container count-container">
+				<div class="cover"></div>
 				<p class="foottext">- {{cardcount}} -</p>
 			</div>
 			</div>

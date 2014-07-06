@@ -20,6 +20,9 @@ h4{
 p{
 	color: #959595;
 }
+h3{
+	color: #ffffff;
+}
 h5{
 	color: #535353;
 	font-weight: normal;
@@ -92,7 +95,6 @@ h5{
 	padding: 2em 1.5em 2em 1.5em;
 	height: 60%;
 	max-width: 50em;
-	cursor: pointer;
 	max-height: 40em;
 }
 .scroll-container{
@@ -225,6 +227,28 @@ a:active{
 	position: absolute;
 	height: 100%;
 	width: 100%;
+	left: 0;
+	top: 0;
+}
+.clickcover{
+	z-index: 1;
+}
+.inlinelist{
+	display: inline;
+	padding-left: 0;
+	left: -1em;
+}
+li.inlinelist{
+	cursor: pointer;
+	margin: 1em;
+}
+.unsel{
+	color: #959595;
+	font-weight: normal;
+}
+.sel{
+	color: #ffffff;
+	font-weight: bold;
 }
 @media screen and (max-width: 480px){
 	.cardtitle{
