@@ -6,6 +6,7 @@ angular.module('myApp.controllers', [])
     var titles;
     var descriptions;
     var random;
+    var hi = false;
     var getData = function(lang){
       $("#"+$scope.currLang).attr("class","inlinelist unsel");
       console.log("#"+lang);
@@ -16,6 +17,20 @@ angular.module('myApp.controllers', [])
         descriptions = data.descriptions;
       })
     };
+    document.onkeydown = checkKey;
+    function checkKey(e){
+      e = e || window.event;
+      if(e.keyCode == '32'){
+        $scope.$apply(function (){
+          $scope.draw();
+        });  
+      }
+    }
+    $scope.toggleDiv = function(divID){
+      var theDiv = document.getElementById(divID);
+      if(theDiv.style.display == "block") theDiv.style.display = "none";
+      else theDiv.style.display = "block";
+    }
     $scope.draw = function(){
       random = (Math.floor(Math.random()*100));
       document.getElementById('body').style.background = colors[random%colors.length];
@@ -38,14 +53,34 @@ angular.module('myApp.controllers', [])
       getData(lang);
       $scope.currLang=lang;
     }
-
+    $scope.give = false;
     $scope.cardtitle = "First taste!";
-    $scope.carddesc = "Everyone takes a sip to get ready for THE GAME! Click this box to continue...";
+    $scope.carddesc = "Everyone takes a sip to get ready for AlcoLoL!";
     $scope.currLang;
     $scope.hidehelp = true;
     $scope.hidesetts = true;
+    $scope.hidegames = true;
     $scope.cardcount = 0;
     $scope.changeLanguage("English");
 
-  	
+    $scope.tabs = [{
+            title: 'How to play',
+            url: 'partials/howto.html'
+        }, {
+            title: 'Games',
+            url: 'partials/games.html'
+        }, {
+            title: 'About',
+            url: 'partials/about.html'
+    }];
+
+    $scope.currentTab = 'partials/howto.html';
+
+    $scope.onClickTab = function (tab) {
+        $scope.currentTab = tab.url;
+    }
+    
+    $scope.isActiveTab = function(tabUrl) {
+        return tabUrl == $scope.currentTab;
+    }
   }]);

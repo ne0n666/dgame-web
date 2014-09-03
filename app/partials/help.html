@@ -1,28 +1,16 @@
 <div class="help-container">
+	<ul class="ul-tab">
+        <li class="li-tab" ng-repeat="tab in tabs" 
+            ng-class="{sel:isActiveTab(tab.url)}" 
+            ng-click="onClickTab(tab)">{{tab.title}}</li>
+    </ul>
+    <hr class="hr-tab">
 	<div class="scroll-container">
-		<h4>What is AlcoLoL??</h4>
-		<p>The GAME is a social drinking game. It's simple, quick and it gets the party started FAST! So get your buddies together and try it out!</p>
-		<h4>OK, everyone's here. What now?</h4>
-		<ol>
-			<li>Everyone gets a drink.</li>
-			<li>AlcoLoL is played in turns. When it's your turn, you click the square in the middle, to get your task.</li>
-			<li>There are different types of tasks - some will make you drink, some will make others drink and some will be games that everyone plays together.</li>
-			<li>Almost all tasks will result in someone taking a sip of their drink.</li>
-		</ol>
-		<p>And that's it! You play as long as you feel like it. (be sure to stop if you feel sick)</p>
-		<h4>Got it, any other tips?</h4>
-		<ul>
-			<li>Make sure everyone gets refills as needed.</li>
-			<li>Most games are played in turns - it goes around until someone messes up.</li> 
-			<li>Switch to fullscreen (F11), it looks awesome!</li>
-			<li>Be fair - drink when you should and don't force others to drink more than they feel like.</li>
-			<li>Remember, this is a game so HAVE FUN!</li>
-		</ul>
-		<h4>DRINK RESPONSIBLY!</h4>
-		<p>I am not liable for any damage or harm you cause while playing this game.</p>
-		<h4>About</h4>
-		<p>Author: Nejc Susin</p>
-		<p>Version: 1.1 (28 cards)</p>
+		<div id="tabs">
+			<div id="tabView">
+				<div ng-include="currentTab"></div>
+			</div>
+		</div>
 	</div>
 	<h5>Scroll for more...</h5>
 </div>
