@@ -6,6 +6,6 @@ angular.module('myApp', [
   'myApp.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/play', {templateUrl: 'partials/play.html', controller: 'PlayController'});
+  $routeProvider.when('/play', {templateUrl: 'partials/main.html', controller: 'PlayController'});
   $routeProvider.otherwise({redirectTo: '/play'});
 }]);

@@ -1,116 +1,29 @@
-<h3>The games explained</h3>
-<p>A large part of tasks are mini-games. Here are more detailed instructions on how to play them, along with examples. Note, that there are many different ways to play these games and the version you are used to may differ from the one described here. Treat these rules more like general guidelines and adjust the games according to your needs and preferences. If you have improvements or corrections, submit them by clicking the Feedback button!</p>
-<div class="left">
-	<h4 ng-click="toggleDiv('takeone')">Take 1, Give 2 and similar</h4>
-	<div id="takeone">
-		<p>You take or give a number of sips. You can divide the sips between more players, for instance give 4 means you can tell 1 person to take 4 sips, 4 people 1 each or anything in between.</p>
-	</div><br>
-	<h4 ng-click="toggleDiv('newrule')">New rule</h4>
-	<div id="newrule">
-		<p>You think of a new rule or decide to keep the current one. Rules must be followed by all players, at all times. Whenever someone breaks the rule, he must take a sip. You can also choose to have two or more rules active at the same time - it's up to you! A few popular rules:</p>
-		<ul>
-			<li>You must drink with your left hand</li>
-			<li>You can't say words beginning with DR</li>
-			<li>You must hit your forehead before taking a sip</li>
-			<li>Everyone is called by their left neighbor's name</li>
-		</ul>
-	</div><br>
-	<h4 ng-click="toggleDiv('pickamate')">Pick a mate</h4>
-	<div id="pickamate">
-		<p>You choose someone to be your drinking mate. Whenever either of you drinks, the other one drinks as well. When you get this card again you choose a third mate to join you. If you play long enough, everyone will drink all the time, at which point you should reset this game and everyone is alone again.</p>
-	</div><br>
-	<h4 ng-click="toggleDiv('neverhavei')">Never have I ever</h4>
-	<div id="neverhavei">
-		<p>You name something you have never done before. Everyone who has done it, has to drink. You can also lie and name something you actually have done and drink as well. Some examples:</p>
-		<ul>
-			<li>I have never tried gin tonic</li>
-			<li>I have never kissed a guy</li>
-			<li>I have never peed standing up</li>
-			<li>I have never gone skinny dipping</li>
-		</ul>
-	</div><br>
-	<h4 ng-click="toggleDiv('rps')">Rock, paper scissors</h4>
-	<div id="rps">
-		<p>Everyone plays RPS until there is only 1 winner is left - he doesn't drink, everyone else takes a sip. The suggested way to determine who made to the next round is explained below.</p>
-		<p>You count the number of occurrences for each sign. The majority wins and goes to the next round. The sign that defeats the majority also goes to the next round. The sign that the majority defeats is out. A special scenario occurs when a sign doesn't appear in a round. In that case majority doesn't matter - the better sign wins. Here's an example of a game:</p>
-		<ol>
-			<li> 5 rocks, 4 papers, 3 scissors -> scissors are out, since rocks are the majority and scissors lose against rock.</li>
-			<li> 3 rocks, 3 papers, 3 scissors -> draw! Everyone made it to the next round.</li>
-			<li> 3 rocks, 0 papers, 6 scissors -> Paper didn't appear, so the number of occurrences doesn't matter. Scissors are out.</li>
-			<li> 0 rocks, 2 papers, 1 scissors -> Again, the number of occurrences doesn't matter. scissors beats paper, so we have a winner!</li>
-		</ol>
-	</div><br>
-	<h4 ng-click="toggleDiv('truthordare')">Truth or dare</h4>
-	<div id="truthordare">
-		<p>You choose if you want others to ask you a question (truth) or give you a task (dare). Whichever you choose, you must answer or complete it or finish the rest of your drink. The questions must be answered truthfully. Dares should be accomplishable in a reasonable amount of time - the game does not go on until the dare is completed. Drinking cannot be a dare. Examples:</p>
-		<ul>
-			<li>TRUTH: When was the last time you got wasted?</li>
-			<li>DARE: Climb this tree</li>
-			<li>TRUTH: Who was your first crush?</li>
-			<li>DARE: 10 push-ups</li>
-			<li>TRUTH: Have you ever stolen anything?</li>
-			<li>DARE: Show us the Gangnam style dance</li>
-		</ul>
-	</div><br>
-	<h4 ng-click="toggleDiv('sing')">Sing for the moment!</h4>
-	<div id="sing">
-		<p>You sing a part of the first song that pops to your head. It can be just the chorus, or more if you feel like singing. The song can be of any genre, so you can also rap, growl etc.</p>
-	</div><br> 
-	<h4 ng-click="toggleDiv('puzzles')">The puzzles</h4>
-	<div id="puzzles">
-		<p>These puzzles are only fun if you have people in your group who haven't played them before. They are all played in an infinite loop, until everyone figures it out. That can take a while, so you should play for a couple of loops and then stop until the Puzzles come up again. Do not explain the rules to others, just start playing and let them figure out what they're supposed to do and say. It can be incredibly fun watching people pulling their hair out trying to figure it out! Reading the secrets to these puzzles will ruin them for you, so do not read this section if you don't absolutely have to! It's enough if one person knows the secret.</p>
-		<h4 ng-click="toggleDiv('hitchhike')">Hitchhiking</h4>
-		<div id="hitchhike">
-			<p>You name things you will take with you. The trick is in naming only thing that start with the first letter of your name. So if your name is John, you can bring a jumper or a jacket, but you can't bring any trousers or a knife.</p>
-		</div><br>
-		<h4 ng-click="toggleDiv('greenglass')">Green Glass Door</h4>
-		<div id="greenglass">
-			<p>You name things you will take with you on a trip. The trick is in naming only things that contain double letters, like glass, door or beer.</p>
-		</div><br>
-		<h4 ng-click="toggleDiv('thehat')">Who has the hat?</h4>
-		<div id="thehat">
-			<p>The first person describes how players pass an imaginary hat, and in the end asks who has the hat, e.g. "I have the hat. I pass it to John, who gives it to Eddie and he passes it on to Cassy. Who has the Hat?" The first player to speak after the question is the one who has the hat. The passing that is described has no meaning, other than to throw people off. Let others describe how the hat travels as well, even if they don't know what the joke is.</p>
-		</div><br>
-		<h4 ng-click="toggleDiv('perfectcircle')">This is the perfect circle</h4>
-		<div id="perfectcircle">
-			<p>The first player: "This is a perfect circle." (draws a circle with his finger) "Here!" (makes a gesture as if to pass something on to the next person) The next one says "Thank you, that was a perfect circle. This is also a perfect circle. *draws* Here you go." and again passes to the next one. The trick is in thanking the previous player and passing the right to speak to the next person. If a player didn't do those things, his "circle" wasn't "perfect" and the next player (if he knows the trick) can point that out by saying "That wasn't a perfect circle! THIS is a perfect Circle..." What you draw in the air doesn't have to be a circle, just be sure to thank and pass on.</p>
+<ul class="games-ul">
+<li>
+	<div class="games-li-div" >
+		<input type="checkbox" name="accordion" id="accordion_howto" class="games-li-input"/>
+		<label for="accordion_howto" class="games-li-label"></label>
+		<div class="games-li-head">
+			<div class="games-li-name">What is AlcoLoL?</div>
+			<i class="fa fa-chevron-right fa-inverse expand-pointer"></i>
+		</div>	
+		<div class="games-li-body">
+			<div howto-directive class="left-align"></div>
 		</div>
-	</div><br><br><br>
-	<p>The following games are played in an infinite loop, each player saying a valid word or phrase when it's his turn, until someone makes a mistake or takes too long to respond.</p><br>
-	<h4 ng-click="toggleDiv('stopgo')">Stop - Go!</h4>
-	<div id="stopgo">
-		<p>The first player determines the direction of play by looking in that direction. Saying GO continues in that direction, saying STOP reverses the direction. The players can look anywhere in order to throw others off (except for the very first player).</p>
-	</div><br>
-	<h4 ng-click="toggleDiv('fuzzyduck')">Fuzzy Duck</h4>
-	<div id="fuzzyduck">
-		<p>Similar to Stop - Go!, but a bit more complicated. When the game goes clockwise, everyone has to say Fuzzy Duck and when it goes counter-clockwise, everyone has to say Ducky Fuzz. The direction is reversed by saying Does He?</p>
-		<p>For additional confusion You can say Does He Fuck? instead of just Does He, and add Fuck He Does, which can only be used immediately after someone says Does He Fuck, and will reverse the direction again. Does He Fuck cannot be used by two players in a row - the second person must use Fuck He Does.</p>
-		<p>Another more complicated version: regardless of the direction, players alternate between Fuzzy Duck and Ducky Fuzz. So you never hear Fuzzy Duck twice in a row, even when direction is reversed. An example: Fuzzy Duck, Ducky Fuzz, Fuzzy Duck, Does He Fuck?, Ducky Fuzz, Does He Fuck?, Fuck He Does!, Fuzzy Duck, Ducky Fuzz...</p>
-	</div><br>
-	<h4 ng-click="toggleDiv('camping')">Let's go camping!</h4>
-	<div id="camping">
-		<p>You choose a place. It's up to you how specific you want to get, it can be a general place, like seaside or mountains, or it can be a bit more specific, like Miami Beach or the Alps. The key is choosing a place that isn't too hard to guess but will still take some thinking. Also take into account how well people know you! The place doesn't necessarily have to be somewhere you would go for a vacation - it can be a bar or anyplace really, just be sure that others will have heard of it.</p>
-	</div><br> 
-	<h4 ng-click="toggleDiv('categories')">Categories</h4>
-	<div id="categories">
-		<p>You pick a category and everyone must name something from it. Examples:</p>
-		<ul>
-			<li>Car brands</li>
-			<li>Alcoholic beverages</li>
-			<li>Olympic disciplines</li>
-			<li>The States of the USA</li>
-		</ul>
-	</div><br>
-	<h4 ng-click="toggleDiv('boom')">Boom</h4>
-	<div id="boom">
-		<p>If the first player chooses the number 4, the game would go like this:<br> 1, 2, 3, BOOM, 5, 6, 7, BOOM, 9, 10, 11, BOOM, 13, BOOM, 15, BOOM, ...</p>
-	</div><br>
-	<h4 ng-click="toggleDiv('sentences')">Sentences</h4>
-	<div id="sentences">
-		<p>Everyone says a word that will form a sentence with the previous ones. The word must grammatically belong with the others, but the meaning will not always be completely logical. The sentences can get really long and silly but that doesn't matter. The game ends when someone takes too long, is laughing too hard to say anything or says a word that doesn't fit with the previous one at all.</p>
-	</div><br>
-	<h4 ng-click="toggleDiv('kalodont')">Kalodont</h4>
-	<div id="kalodont">
-		<p>Everyone names a word beginning with the last two letters of the previous player's word. If a player can't think of a word, he loses. If a player says a word ending with KA, the next person must say KALODONT, to make the player lose. If he / she doesn't say KALODONT, he loses. If no one in the group can think of a word beginning with the two letters, the player who said the last one loses.</p>
 	</div>
-</div>
+</li>
+<li ng-repeat="title in titles">
+	<div class="games-li-div" >
+		<input type="checkbox" name="accordion" id="accordion_{{title}}" class="games-li-input"/>
+		<label for="accordion_{{title}}" class="games-li-label"></label>	
+		<div class="games-li-head">
+			<span class="games-li-count">{{$index + 1}}.</span>
+			<div class="games-li-name">{{title}}</div>
+			<i class="fa fa-chevron-right fa-inverse expand-pointer"></i>
+		</div>
+		<div class="games-li-body">
+			<p>{{descriptions[$index]}}</p>
+		</div>
+	</div>
+</li>
+</ul>

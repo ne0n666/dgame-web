@@ -1,0 +1,19 @@
+<div class="games-top">
+	<div class="menu-item" ng-class="{sel:isActiveTab('partials/play.html')}" ng-click="setTab('partials/play.html')">
+		<i class="fa fa-gamepad fa-2x fa-inverse menu-icon"></i>
+		<span>PLAY</span>
+	</div>
+	<div class="menu-item" ng-class="{sel:isActiveTab('partials/games.html')}" ng-click="setTab('partials/games.html')">
+		<i class="fa fa-question fa-2x fa-inverse menu-icon"></i>
+		<span>HELP</span>
+	</div>
+	<div class="menu-item" ng-class="{sel:isActiveTab('partials/settings.html')}" ng-click="setTab('partials/settings.html')">
+		<i class="fa fa-cogs fa-2x fa-inverse menu-icon"></i>
+		<span>SETUP</span>
+	</div>
+	<div class="menu-item ng-class="{sel:isActiveTab('partials/about.html')}" ng-click="setTab('partials/about.html')"">
+		<i class="fa fa-thumbs-up fa-2x fa-inverse menu-icon"></i>
+		<span>ABOUT</span>
+	</div>
+</div>
+<div ng-include="currentTab"></div>

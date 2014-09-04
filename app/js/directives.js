@@ -2,10 +2,10 @@
 
 angular.module('myApp.directives', [])
 
-	.directive('helpDirective', function() {
+	.directive('howtoDirective', function() {
 		return {
 			restrict: 'A',
-			templateUrl:'/partials/help.html'
+			templateUrl:'/partials/howto.html'
 		};
 	})
 	.directive('settDirective', function() {
