@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('myApp.controllers', [])
-  .controller('PlayController', ['$scope', function($scope) {
+  .controller('PlayController', ['$scope', '$sce', function($scope, $sce) {
     var colors = ["#f3ce0e", "#56af34", "#123456", "#dad990", "#428def", "#12ad6f", "#b83d3d", "#5bc8b0", "#3a5c1f", "#184936", "#4f82c4", "#286077", "#4a1d48", "#c3654b", "#c4994f", "#7353c6", "#d0cb71", "#c25047"];
     var random;
     //gets data for selected language from .json
@@ -10,6 +10,14 @@ angular.module('myApp.controllers', [])
       $.getJSON(path, function(data){
         $scope.titles = data.titles;
         $scope.descriptions = data.descriptions;
+        $scope.help = data.help;
+        $scope.howto = data.howto;
+        var i;
+        for(i=0;i<$scope.help.length;i++){
+          $scope.help[i] = $sce.trustAsHtml($scope.help[i]);
+          console.log($scope.help[i]);
+        }
+        
       })
     };
     /* detecting spacebar keypress */
@@ -53,11 +61,12 @@ angular.module('myApp.controllers', [])
             title: 'How to play',
             url: 'partials/howto.html'
         }, {
-            title: 'Games',
-            url: 'partials/games.html'
+            title: 'Help',
+            url: 'partials/help.html'
         }, {
             title: 'About',
             url: 'partials/about.html'
     }];
     $scope.currentTab = 'partials/play.html';
   }]);
+  

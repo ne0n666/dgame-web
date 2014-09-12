@@ -1,0 +1,25 @@
+<ul class="help-ul">
+<li class="help-li-div">
+	<input type="checkbox" name="accordion" id="accordion_howto" class="help-li-input"/>
+	<label for="accordion_howto" class="help-li-label"></label>
+	<div class="help-li-head">
+		<div class="help-li-name">{{howto}}</div>
+		<i class="fa fa-chevron-right fa-inverse expand-pointer"></i>
+	</div>	
+	<div class="help-li-body">
+		<div ng-bind-html="help[0]" class="left-align"></div>
+	</div>
+</li>
+<li ng-repeat="title in titles" class="help-li-div">
+	<input type="checkbox" name="accordion" id="accordion_{{title}}" class="help-li-input"/>
+	<label for="accordion_{{title}}" class="help-li-label"></label>	
+	<div class="help-li-head">
+		<div class="help-li-count">{{$index + 1}}.</div>
+		<div class="help-li-name">{{title}}</div>
+		<i class="fa fa-chevron-right fa-inverse expand-pointer"></i>
+	</div>
+	<div class="help-li-body">
+		<div ng-bind-html="help[$index+1]"></div>
+	</div>
+</li>
+</ul>

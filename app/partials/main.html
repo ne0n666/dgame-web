@@ -1,19 +1,19 @@
-<div class="games-top">
+<div class="menu-div no-select">
 	<div class="menu-item" ng-class="{sel:isActiveTab('partials/play.html')}" ng-click="setTab('partials/play.html')">
 		<i class="fa fa-gamepad fa-2x fa-inverse menu-icon"></i>
-		<span>PLAY</span>
+		<span class="menu-title">PLAY</span>
 	</div>
-	<div class="menu-item" ng-class="{sel:isActiveTab('partials/games.html')}" ng-click="setTab('partials/games.html')">
+	<div class="menu-item" ng-class="{sel:isActiveTab('partials/help.html')}" ng-click="setTab('partials/help.html')">
 		<i class="fa fa-question fa-2x fa-inverse menu-icon"></i>
-		<span>HELP</span>
+		<span class="menu-title">HELP</span>
 	</div>
 	<div class="menu-item" ng-class="{sel:isActiveTab('partials/settings.html')}" ng-click="setTab('partials/settings.html')">
 		<i class="fa fa-cogs fa-2x fa-inverse menu-icon"></i>
-		<span>SETUP</span>
+		<span class="menu-title">SETUP</span>
 	</div>
-	<div class="menu-item ng-class="{sel:isActiveTab('partials/about.html')}" ng-click="setTab('partials/about.html')"">
+	<div class="menu-item" ng-class="{sel:isActiveTab('partials/about.html')}" ng-click="setTab('partials/about.html')">
 		<i class="fa fa-thumbs-up fa-2x fa-inverse menu-icon"></i>
-		<span>ABOUT</span>
+		<span class="menu-title">ABOUT</span>
 	</div>
 </div>
-<div ng-include="currentTab"></div>
+<div ng-include="currentTab" class="no-select"></div>
