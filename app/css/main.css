@@ -46,7 +46,6 @@
 *
 {
     box-sizing: border-box;
-
     text-align: center;
 }
 html
@@ -105,6 +104,9 @@ h4
 hr
 {
     width: 100%;
+}
+.fb-share-button{
+    top: -5px;
 }
 .adscontainer{
     position: absolute;

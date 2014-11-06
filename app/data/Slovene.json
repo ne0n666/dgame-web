@@ -4,8 +4,8 @@
 		"Pij 1x", 
 		"Podari 4", 
 		"Podari 2", 
-		"Gospodje...", 
-		"Dame...", 
+		"Fantje...", 
+		"Dekleta...", 
 		"Vsi pijete!", 
 		"Novo pravilo", 
 		"Izberi prijatelja", 
@@ -61,7 +61,7 @@
 		"Na glas prebri zadnji 2 sms sporočili na tvojem telefonu!"
 	],
 	"help": [
-		"<p>AlcoLoL is a social drinking game. It's simple, quick and it gets the party started FAST! So get your buddies together and try it out!<\/p><h4>OK, everyone's here. What now?<\/h4><ol><li>Everyone gets a drink.<\/li><li>AlcoLoL is played in turns. When it's your turn, you click the black box in the middle or press the spacebar to get your task.<\/li><li>Just do what it says. Explainations for individual games are below.<\/li><li>Almost all tasks will result in someone taking a sip of their drink.<\/li><\/ol><p>And that's it! You take turns until you feel like you need a break. (be sure to stop if you feel sick!)<\/p><h4>Got it! Any pro-tips?<\/h4><ul><li>Make sure everyone gets refills as needed.<\/li><li>Most games are played in turns - it goes around until someone messes up.<\/li><li>Use CTRL and + or - to increase or decrease size.<\/li><li>Be fair - drink when you should and don't force others to drink more than they feel like.<\/li><li>Most games have different versions. Adjust the rules so they suit your group! Don't get hooked on details!<\/li><li><h4>KNOW YOUR LIMIT!<\/h4><\/li><li><h4>DRINK RESPONSIBLY!<\/h4><\/li><li><h4>HAVE FUN!<\/h4><\/li><\/ul><p>Below you will find more detailed instructions on how to play all the games, along with examples and improvements. Note, that there are many different ways to play these games and the version you are used to may differ from the one described here. Treat these rules more like general guidelines and adjust the games according to your needs and preferences.<\/p>",
+		"<p>Dronky je družabna pijanska igrica. Vse kar potrebuješ je skupina prijateljev in seveda pijača!<\/p><h4>OK, vsi so tu. Kaj zdaj?<\/h4><ol><li>Vsak si nalije kozarec pijače.<\/li><li>Dronky se igra v krogih. Ko si na vrsti, klikni črn kvadrat v sredini ali pritisni space, da dobiš nalogo ali igro.<\/li><li>Kratko navodilo bo napisano pod imenom naloge. Več podrobnosti najdeš spodaj.<\/li><li>Na koncu skoraj vsake igre oz. naloge bo nekdo pil.<\/li><\/ol><p>To je to! Igrajte dokler ne omagate.<\/p><h4>Štekam! Še kak nasvet?<\/h4><ul><li>Poskrbi, da kozarci niso prazni.<\/li><li>Večina iger se igra v krogu, dokler nekdo ne naredi napake.<\/li><li>Pritisni tipki CTRL in + ali -, da povečaš oz. pomanjšaš črke.<\/li><li>Bodi pošten - pij, ko moraš in ne sili drugih v alkohol, če imajo dovolj!<\/li><li>Igre imajo mnogo različic. Vsaka skupina igra drugače, zato prilagodite pravila svojim potrebam. Ne obremenjujte se z malenkostmi!<\/li><li><h4>PIJ ODGOVORNO - UŽIVAJ!<\/h4><\/li><\/ul><p>Spodaj boš našel bolj podrobna pravila iger, skupaj s primeri in izboljšavami. Morda si igro navajen igrati malo drugače. Spodnja pravila so bolj predlogi - prilagodite jih po svoje, da se boste z njimi vsi strinjali.<\/p>",
 		"<p>Naredi požirek svoje pijače.<\/p>",
 		"<p>Določiš, kdo pije. Razdeliti moraš 4 požirke. Lahko daš vse 4 eni osebi, ali pa izbereš 4 in naredi vsak enega (lahko tudi kaj vmes).<\/p>",
 		"<p>Določiš, kdo pije. Razdeliti moraš 2 požirka. Lahko daš oba isti osebi, ali pa izbereš 2 in naredita vsak enega.<\/p>",
@@ -91,5 +91,5 @@
 		"<p>Zapoj del poljubne pesmi. Lahko je samo refren, ali tudi več.<\/p>",
 		"<p>Na glas prebri zadnji 2 sms sporočili na tvojem telefonu!<\/p>"
 	],
-	"howto": "Kaj je AlcoLoL?"
+	"howto": "Kaj je Dronky?"
 }
